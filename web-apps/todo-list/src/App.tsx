@@ -4,11 +4,7 @@ let todos = ["Walk the dog", "Water the plants", "Wash the dishes"];
 
 function App() {
 	const [todo, setTodo] = useState("");
-	const [todoList, setTodoList] = useState([
-		"Walk the dog",
-		"Water the plants",
-		"Wash the dishes",
-	]);
+	const [todoList, setTodoList] = useState(todos);
 	function addTodo() {
 		setTodoList([...todoList, todo]);
 		setTodo("");
