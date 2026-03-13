@@ -1,10 +1,10 @@
 import { useState } from "react";
 
-let todos = ["Walk the dog", "Water the plants", "Wash the dishes"];
+const DEFAULT_TODOS = ["Walk the dog", "Water the plants", "Wash the dishes"];
 
 function App() {
 	const [todo, setTodo] = useState("");
-	const [todoList, setTodoList] = useState(todos);
+	const [todoList, setTodoList] = useState(DEFAULT_TODOS);
 	function addTodo() {
 		setTodoList([...todoList, todo]);
 		setTodo("");
